@@ -3,7 +3,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 const {demo} = require('../utils/utils');
 
-describe('filtrado', function() {
+describe('INICIAR TEST DE FILTRADO DE CURSOS', function() {
   this.timeout(90000)
   let driver
   let vars
@@ -14,7 +14,7 @@ describe('filtrado', function() {
   afterEach(async function() {
     await driver.quit();
   })
-  it('filtrado', async function() {
+  it('FILTRADO DE CURSOS', async function() {
     await driver.get("https://profelitebolivia.web.app/")
     await driver.manage().window().setRect(1382, 784)
     await driver.findElement(By.xpath("//div[2]/div/span")).click()

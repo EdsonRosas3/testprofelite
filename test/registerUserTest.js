@@ -3,7 +3,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 const {demo} = require('../utils/utils');
 
-describe('registro2', function() {
+describe('INICIANDO TEST RESGISTRO DE USUARIO', function() {
   this.timeout(60000)
   let driver
   let vars
@@ -14,7 +14,7 @@ describe('registro2', function() {
   afterEach(async function() {
     await driver.quit();
   })
-  it('registro2', async function() {
+  it('REGISTRO DE USUARIO', async function() {
     await driver.get("https://profelitebolivia.web.app/")
     await driver.manage().window().setRect(1382, 784)
     await driver.findElement(By.css(".jss10:nth-child(1) > .MuiButton-label")).click()

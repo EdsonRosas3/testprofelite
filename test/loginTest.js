@@ -3,7 +3,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 const {demo} = require('../utils/utils');
 
-describe('Iniciando el test de Login', function() {
+describe('INICIAR TEST DE INICIO DE SESION', function() {
   this.timeout(50000)
   let driver
   let vars
@@ -14,7 +14,7 @@ describe('Iniciando el test de Login', function() {
   afterEach(async function() {
     await driver.quit();
   })
-  it('Ejecutar la prueba automatizada', async function() {
+  it('INICIO DE SESION', async function() {
     await driver.get("https://profelitebolivia.web.app")
     await driver.manage().window().setRect({ width: 1138, height: 895 })
     await driver.findElement(By.css(".MuiButtonBase-root:nth-child(2) > .MuiButton-label")).click()
